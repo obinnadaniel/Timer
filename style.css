@@ -1,0 +1,141 @@
+
+
+body {
+	font: 20px 'work sans', sans-serif;
+	color: #fff;
+	background: #942222;
+}
+
+* {
+	box-sizing: border-box;
+	transition: all .1s ease-in;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ 
+
+h1 {
+	position: relative;
+	background: #942222;
+	margin-bottom: 1em;
+	display: inline-block;
+	padding: 0 10px;
+}
+
+@media (min-width: 700px) {
+	.border:before {
+		content: "";
+		height: 3px;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		position: absolute;
+		width: 200%;
+		top: 50%;
+		left: -50%;
+		z-index: -1;
+	}	
+}
+
+
+.toggle-button-container {
+	width: 50%;
+	float: left;
+}
+
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #BD3737;
+  cursor: pointer;
+  &:hover {
+  	background: #BD3737;
+  }
+  &[disabled] {
+  	cursor: not-allowed;
+  	background: desaturate(#BD3737, 20%);
+  }
+}
+
+#button-container {
+	max-width: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.toggle-timer {
+	width: 50px;
+	margin: 0 .1em;
+}
+
+#session-length,
+#break-length {
+	width: 40px;
+	height: 40px;
+	line-height: 37px;
+	margin-bottom: .4em;
+	display: inline-block;
+	background: #fff;
+	color: #942222;
+	border: solid 1px #BD3737;
+	border-radius: 50%;
+}
+
+
+header {
+	margin-bottom: .4em;
+}
+
+#countdown {
+  font-size: 4em;
+  cursor: pointer;
+  text-align: center;
+}
+
+#countdown-container {
+	padding-top: 1em;
+	display: inline-block;
+  	text-align: center;
+  	margin-bottom: 2em;
+}
+@media (min-width: 600px) {
+	#countdown-container {
+		width: 16em;
+		height: 16em;
+		padding-top: 5em;
+		border-radius: 50%;	
+	  	border: 4px solid  #BD3737;;	
+	}  	
+}
+.break {
+	background: #25857D;
+	border-color: #98C3A1;
+	button {
+  		border-color: #98C3A1;
+  		&:hover {
+  			background: #98C3A1;  			
+  		}
+  		&[disabled]{
+		  	cursor: not-allowed;
+		  	background: desaturate(#98C3A1, 20%);
+		}
+	}
+}

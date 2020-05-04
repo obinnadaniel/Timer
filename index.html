@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoroclock</title>
+      <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="border">Pomodoro Timer</h1>
+        <div class="container">
+          <div class="toggle-button-container" id="sessionlength-container">
+            <header>Session Length</header>
+            <time id="session-length"></time>
+            <div class="toggle-button-container__sub-container"></div>
+            <button class="toggle-timer" type="button" id="decrease-session">-
+              <button class="toggle-timer" type="button" id="increase-session">+</button>
+            </button>
+          </div>
+          <div class="toggle-button-container" id="breaklength-container">
+            <header>Break Length</header>
+            <time id="break-length"></time>
+            <div class="toggle-button-container__sub-container">
+              <button class="toggle-timer" type="button" id="decrease-break">-</button>
+              <button class="toggle-timer" type="button" id="increase-break">+</button>
+            </div>
+          </div>
+          <div id="countdown-container">
+            <header id="type">work session</header>
+            <time id="countdown"></time>
+          </div>
+          <div id="button-container">
+            <button type="button" id="start-session">Start</button>
+            <button type="button" id="stop-session">Stop</button>
+            <button type="button" id="reset-session">Reset</button>
+          </div>
+        </div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>
